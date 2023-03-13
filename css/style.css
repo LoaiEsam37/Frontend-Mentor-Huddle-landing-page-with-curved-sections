@@ -269,13 +269,6 @@ main section:nth-of-type(4) {
     margin-bottom: 100px;
 }
 
-@media (max-width: 1200px) {
-    main section {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
 @media (max-width: 950px) {
     main section .container {
         justify-content: center;
