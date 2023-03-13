@@ -49,6 +49,13 @@ nav .container a:hover {
 
 }
 
+@media (max-width: 400px) {
+    nav .container a {
+        width: max-content;
+        font-size: 12px;
+    }
+}
+
 /* header */
 
 header .container:nth-child(2) {
@@ -251,11 +258,15 @@ main section:nth-of-type(4) .container a:hover {
     background-color: #ff9bdb;
 }
 
-section:nth-of-type(1),
-section:nth-of-type(1) .container,
-section:nth-of-type(3),
-section:nth-of-type(3) .container {
+main section:nth-of-type(1),
+main section:nth-of-type(1) .container,
+main section:nth-of-type(3),
+main section:nth-of-type(3) .container {
     background-color: #f6fbff;
+}
+
+main section:nth-of-type(4) {
+    margin-bottom: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -288,12 +299,11 @@ section:nth-of-type(3) .container {
 }
 
 /* footer */
-footer {
+footer section {
     background-color: #00252e;
     padding-top: 200px;
     color: #ffffff;
     padding-bottom: 100px;
-    margin-top: 100px;
 }
 
 footer .container {
@@ -379,36 +389,44 @@ footer .container .line img {
     background-size: cover;
 }
 
-.bg-curves:nth-of-type(1) {
+.bg-curves--one {
     background-image: url(../images/bg-section-top-desktop-1.svg);
 }
 
-.bg-curves:nth-of-type(2) {
+.bg-curves--two {
     background-image: url(../images/bg-section-bottom-desktop-1.svg);
 }
 
-.bg-curves:nth-of-type(3) {
+.bg-curves--three {
     background-image: url(../images/bg-section-top-desktop-2.svg);
 }
 
-.bg-curves:nth-of-type(4) {
+.bg-curves--four {
     background-image: url(../images/bg-section-bottom-desktop-2.svg);
 }
 
+.bg-curves--five {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+}
+
 @media(max-width: 750px) {
-    .bg-curves:nth-of-type(1) {
+    .bg-curves--one {
         background-image: url(../images/bg-section-top-mobile-1.svg);
     }
 
-    .bg-curves:nth-of-type(2) {
+    .bg-curves--two {
         background-image: url(../images/bg-section-bottom-mobile-1.svg);
     }
 
-    .bg-curves:nth-of-type(3) {
+    .bg-curves--three {
         background-image: url(../images/bg-section-top-mobile-2.svg);
     }
 
-    .bg-curves:nth-of-type(4) {
+    .bg-curves--four {
         background-image: url(../images/bg-section-bottom-mobile-2.svg);
+    }
+
+    .bg-curves--five {
+        background-image: url(../images/bg-footer-top-mobile.svg);
     }
 }
